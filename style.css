@@ -76,6 +76,17 @@ footer p {
     color: #FFFFFF;
 }
 
+input {
+    position: absolute;
+    width: 312px;
+    height: 40px;
+    top: 30px;
+
+    background: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
 .login {
     background-color: #3772FF;
 }
@@ -96,6 +107,14 @@ footer p {
 
 .message {
     margin-left: 58.61px;
+
+}
+.patas {
+    position: absolute;
+    width: 189.96px;
+    height: 243.41px;
+    left: 200px;
+    top: -10px;
 }
 
 .titulo {
@@ -199,7 +218,7 @@ footer p {
     width: 180px;
     height: 40px;
     left: 90px;
-    top: 454px;
+    top: 670px;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -230,3 +249,39 @@ footer p {
     left: 290.7px;
     top: 199px;
 }
+
+.forma-2 {
+    position: absolute;
+    width: 84.03px;
+    height: 415px;
+    left: 0px;
+    top: 368px;
+}
+
+.formulario{
+    position: absolute;
+    width: 312px;
+    height: 336px;
+    left: 24px;
+    top: 310px;
+}
+
+.field {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 163px;
+    height: 24px;
+    left: 98px;
+    top: 578px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #737380;
+}
+
