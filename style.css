@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #3772FF;
+}
+
+header {
+    height: 20vh;
+    background: no-repeat url('assets/Forma1.svg');
+}
+
+footer {
+    background-color: #36D6AD;
+    position: absolute;
+    width: 360px;
+    height: 104px;
+    top: 813px;
+}
+
+footer p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+   
+    position: absolute;
+    left: 45px;
+    top: 41px;
+ 
+    color: #FFFFFF;
+}
+
+.container {
+    border : 1px solid black;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+
+}
+
+.home {
+    position: relative;
+    margin-left: 48px;
+    margin-top: 48px;
+}
+
+.message {
+    margin-left: 58.61px;
+}
+
+.titulo {
+    position: absolute;
+    width: 155px;
+    height: 54px;
+    left: 102px;
+    top: 238px;
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+    border-top: 24px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.texto {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+
+    position: absolute;
+    width: 248px;
+    height: 80px;
+    left: 56px;
+    top: 302px;
+
+    color: #FFFFFF;
+}
+
+.button {
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    background: #FC7071;
+    border-radius: 6px;
+    border: 1px solid #3772FF;
+    
+}
+
+.button-login{
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 90px;
+    top: 398px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    background: #FC7071;
+    border-radius: 6px;
+    border: 1px solid #3772FF;
+}
+.button-cadastro{
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 90px;
+    top: 454px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    background: #FC7071;
+    border-radius: 6px;
+    border: 1px solid #3772FF;
+}
