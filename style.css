@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,14 +45,15 @@ table {
     border-spacing: 0;
 }
 
-body {
-    background-color: #3772FF;
-}
-
 header {
     height: 20vh;
     background: no-repeat url('assets/Forma1.svg');
 }
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+ }
 
 footer {
     background-color: #36D6AD;
@@ -73,6 +74,10 @@ footer p {
     top: 41px;
  
     color: #FFFFFF;
+}
+
+.login {
+    background-color: #3772FF;
 }
 
 .container {
@@ -102,7 +107,7 @@ footer p {
 
     font-family: 'IBM Plex Sans';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 26px;
     line-height: 48px;
     border-top: 24px;
@@ -114,7 +119,7 @@ footer p {
     color: #FFFFFF;
 }
 
-.texto {
+.texto-login {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -130,6 +135,26 @@ footer p {
     top: 302px;
 
     color: #FFFFFF;
+}
+
+.texto {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    width: 312px;
+    height: 71px;
+    left: 24px;
+    top: 215px;
+
+    color: #3772FF;
 }
 
 .button {
