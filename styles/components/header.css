@@ -12,6 +12,11 @@
     width: 2.5rem;
 }
 
+.cabecalho__item-perfil {
+    width: 2.5rem;
+    border-radius: 100px;
+}
+
 .cabecalho__item--perfil {
     margin-left: 6rem ;
 }
