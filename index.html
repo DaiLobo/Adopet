@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <title>Adopet</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/index.css">
+
+        <link rel="stylesheet" href="./styles/components/header.css">
+        <link rel="stylesheet" href="./styles/components/footer.css">
     </head>
 
-    <body class="login">
+    <body>
         <header>
-            <nav>
-                <img  class="home" src="assets/Casa.png">
-                <img  class="message" src="assets/Mensagens.png">
+            <nav class="cabecalho">
+                <a href="#" class="cabecalho__item">
+                    <img  src="assets/Casa.png" alt="Home Page">
+                </a>
+                <a href="#" class="cabecalho__item">
+                    <img  src="assets/Mensagens.png" alt="Message Page">
+                </a>
             </nav>
         </header>
-        <img src="assets/Logo.svg" style="position: absolute; width: 187.67px; left: 87px;">
 
-        <aside class="forma2">
-            <img src="assets/Forma2.svg">
-        </aside>
-         
-        <h3 class="titulo">Boas-vindas</h3>
+        <main>
+            <div>
+                <img src="assets/Logo.svg" alt="Logo da Adopet" class="logo-img">
+                <h3>Boas-vindas!</h3>
+                <p class="paragrafo">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
+                <div class="botoes">
+                    <a href="pages/login.html" class="botoes__btn">
+                        Já tenho conta
+                    </a>
+                    <a href="pages/cadastro.html" class="botoes__btn">
+                        Quero me cadastrar
+                    </a>
+                </div>
+            </div>
+        </main>
         
-        <p class="texto-login">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
-
-        <button class="button-login">
-            <a href="cadastro/login.html">
-                Já tenho conta
-            </a>
-        </button>
-
-        <button class="button-cadastro">
-            <a href="cadastro/login.html">
-                Quero me cadastrar
-            </a>
-        </button>
-
-        <img  class="ilustracao" src="assets/ilustracao.png">
+        <footer class="rodape">
+            <p class="rodape__texto">2022 - Desenvolvido por 
+                <a href="https://github.com/DaiLobo">Diana Rose</a>.
+            </p>
+        </footer>
     </body>
 
-    <footer>
-        <p>2022 - Desenvolvido por Diana Rose.</p>
-    </footer>
 </html>

@@ -1,0 +1,93 @@
+
+body {
+    background-color: var(--branco);
+    background-image: url(../assets/Patas.svg), url(../assets/Forma1.svg);
+    background-position: top right, top left;
+    background-repeat: no-repeat;
+
+    display:flex; 
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+main {
+    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
+    text-align: center;             /*terminou de centralizar o conteúdo */
+    color: var(--azul);
+
+    background-image: url(../assets/Forma-2.svg);
+
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    display:flex; 
+    flex-direction: column; 
+    min-height: 60vh;
+
+    flex-grow: 1;
+}
+
+.logo-img {
+    width: 9rem;
+    margin-bottom: 1.5rem;
+}
+
+.paragrafo {
+    margin: 0 1.5rem;
+}
+
+form {
+    margin: 1.5rem auto 0;
+}
+
+label {
+    color: var(--cinza);
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+
+input {
+    width: 20rem;
+    background-color: var(--cinza-bg);
+    text-align: center;
+    color: var(--cinza-claro);
+    padding: 12px 20px;
+    margin: 0.7rem 0 1.25rem;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+
+    font-family: var(--font-principal);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+input[type=submit] {
+    width: 9.5rem;
+    background-color: var(--coral);
+    text-align: center;
+    color: var(--branco);
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.remember {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-decoration: underline;
+    color: var(--coral);
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.senha-cadastrado {
+    margin-bottom: 0.5rem;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Adopet - Cadastro</title>
+        <title>Adopet - Login</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,24 +28,20 @@
         <main>
             <div>
                 <img src="../assets/Logo_-_azul.svg" alt="Logo da Adopet" class="logo-img">
-                <p class="paragrafo">Ainda não tem cadastro?</p>
-                <p class="paragrafo">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+                <p class="paragrafo">Já tem conta? Faça seu login:</p>
                 
                 <form action="#">
                     <label for="email">Email</label>
-                    <input type="email" class="caixa email" name="email" placeholder="Escolha seu melhor email">
-                
-                    <label for="nome">Nome</label>
-                    <input type="text" class="caixa nome" name="nome" placeholder="Digite seu nome completo">
-                
+                    <input type="email" class="caixa email" name="email" placeholder="Insira seu email">
+  
                     <label for="senha">Senha</label>
-                    <input type="password" class="caixa senha" name="senha" value="secret" placeholder="Crie uma senha">
+                    <input type="password" class="caixa senha" name="senha" value="secret" placeholder="Insira sua senha">
 
-                    <label for="senha-confirme">Confirma sua senha</label>
-                    <input type="password" class="caixa senha" name="senha-confirme" value="secret" placeholder="Repita a senha criada acima">
-
-                    <input class="cadastrar" type="submit" value="Cadastrar">
+                    <p class="remember">Esqueci minha senha.</p>
+                    
+                    <input class="entrar" type="submit" value="Entrar">
                 </form>
+
             </div>
         </main>
 
