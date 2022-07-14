@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Adopet - Mensagem</title>
+        <title>Adopet - Perfil</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
         <link rel="stylesheet" href="../styles/styles.css">
-        <link rel="stylesheet" href="../styles/mensagem.css">
+        <link rel="stylesheet" href="../styles/perfil.css">
 
         <link rel="stylesheet" href="../styles/components/header.css">
         <link rel="stylesheet" href="../styles/components/footer.css">
@@ -19,7 +19,7 @@
                 <a href="home.html" class="cabecalho__item">
                     <img  src="../assets/Casa.png" alt="Home Page">
                 </a>
-                <a href="#" class="cabecalho__item">
+                <a href="mensagem.html" class="cabecalho__item">
                     <img  src="../assets/Mensagens.png" alt="Message Page">
                 </a>
                 <a href="perfil.html" class="cabecalho__item cabecalho__item--perfil">
@@ -33,22 +33,32 @@
 
         <main>
             <div>
-                <p class="paragrafo">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
+                <p class="paragrafo">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
                 <div class="formulario">
                   <form action="#">
+                    <p class="perfil">Perfil</p>
+
+                      <label for="nome">Foto</label>
+                      <p class="edit">Clique na foto para editar</p>
+
                       <label for="nome">Nome</label>
-                      <input type="text" class="caixa nome" name="nome" placeholder="Insira seu nome completo">
+                      <input type="text" class="caixa nome" name="nome" placeholder="Diana Rose">
                   
                       <label for="telefone">Telefone</label>
-                      <input type="number" class="caixa telefone" name="telefone" placeholder="Insira seu telefone e/ou whatsapp">
+                      <input type="number" class="caixa telefone" name="telefone" placeholder="55 21 XXXXXXXXX">
                   
-                      <label for="nome-animal">Nome do animal</label>
-                      <input type="text" class="caixa nome-animal" name="nome-animal" placeholder="Por qual animal você se interessou?">
+                      <label for="cidade">Nome do animal</label>
+                      <input type="text" class="caixa cidade" name="cidade" placeholder="Rio de Janeiro">
   
-                      <label for="mensagem">Mensagem</label>
-                      <input type="text" id="mensagem" name="messagem" placeholder="Escreva a sua mensagem">
+                      <label for="mensagem">Sobre</label>
+                      <input 
+                        type="text"
+                        id="mensagem"
+                        name="messagem"
+                        placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."
+                      >
   
-                      <input class="enviar" type="submit" value="Enviar">
+                      <input class="salvar" type="submit" value="Salvar">
                   </form>
                 </div>
 
