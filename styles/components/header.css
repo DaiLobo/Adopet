@@ -1,6 +1,5 @@
 .cabecalho {
     margin-top: 3rem;
-    margin-left: 3rem;
     display: flex;
 }
 
@@ -19,4 +18,12 @@
 
 .cabecalho__item--perfil {
     margin-left: 6rem ;
+}
+
+@media(min-width: 768px) {
+    .cabecalho {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        display: flex;
+    }
 }
