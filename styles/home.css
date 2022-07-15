@@ -1,20 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
     background-color: var(--branco);
     background-image: url(../assets/Forma1.svg);
     background-position: top left;
+    background-size: 559.8px 469px;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
+
+    display:flex; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/*parte mobile*/
-@media(max-width: 768px){
+.ola {
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;;
+    color: var(--azul);
+
+    display: flex;
+    margin: 12.5rem 4rem 0;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2%;
+    margin-left: 4%;
+}
+
+.pets__pet {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2%;
+    width: 48%;
+    height: 12.25rem;
+    background-color: var(--cinza-bg);
+}
+
+.pets__pet-pet {
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 9rem;
+}
+
+.pets__pet-dunga {
+    background-image: url(../assets/pets/dunga.svg);
+}
+
+.pets__pet-felicia {
+    background-image: url(../assets/pets/felicia.svg);
+}
+
+.pets__pet-sirius {
+    background-image: url(../assets/pets/sirius.svg);
+}
+
+.pets__pet-fiona {
+    background-image: url(../assets/pets/fiona.svg);
+}
+
+.pets__pet-sid {
+    background-image: url(../assets/pets/sid.svg);
+}
+
+.pets__pet-yoda {
+    background-image: url(../assets/pets/yoda.svg);
+}
+
+.pets__pet-lua {
+    background-image: url(../assets/pets/lua.svg);
+}
+
+.pets__pet-amora {
+    background-image: url(../assets/pets/amora.svg);
+}
+
+.pets__pet-zelda {
+    background-image: url(../assets/pets/zelda.svg);
+}
+
+.pets__pet-drescricao {
+    display: flex;
+    flex-direction: column;
+}
+
+.pets__pet-drescricao h1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--azul);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.pets__pet-drescricao ul {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 1.8rem;
+    color: var(--cinza);
+    font-family: "Poppins", sans-serif;
+}
+
+.pets__pet-drescricao p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 0.45rem;
+    color: var(--cinza);
+}
+
+.pets__pet-drescricao img {
+    width: 1rem;
+}
+.pets__pet-drescricao a {
+    display: flex;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+span {
+    margin-left: 0.45rem;
+    color: var(--cinza);
+}
+
+@media(max-width: 360px) {
+    body {
+        background-color: var(--branco);
+        background-image: url(../assets/Forma1.svg);
+        background-position: top left;
+        background-size: auto;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column; 
+        min-height: 100vh;
+    }
+
     .ola {
         line-height: 30px;
-        font-weight: 500;
+        font-weight: 400;
         font-family: "Poppins", sans-serif;;
         color: var(--azul);
     
@@ -24,109 +164,19 @@ body {
         margin-bottom: 1rem;
     }
     
+    .pets {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
     .pets__pet {
         display: flex;
         margin-top: 1rem;
+        margin-right: 0%;
         width: 100%;
         height: 12.25rem;
         background-color: var(--cinza-bg);
-    }
-    
-    .pets__pet-pet {
-        width: 50%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 9rem;
-    }
-    
-    .pets__pet-dunga {
-        background-image: url(../assets/pets/dunga.svg);
-    }
-    
-    .pets__pet-felicia {
-        background-image: url(../assets/pets/felicia.svg);
-    }
-    
-    .pets__pet-sirius {
-        background-image: url(../assets/pets/sirius.svg);
-    }
-    
-    .pets__pet-fiona {
-        background-image: url(../assets/pets/fiona.svg);
-    }
-    
-    .pets__pet-sid {
-        background-image: url(../assets/pets/sid.svg);
-    }
-    
-    .pets__pet-yoda {
-        background-image: url(../assets/pets/yoda.svg);
-    }
-    
-    .pets__pet-lua {
-        background-image: url(../assets/pets/lua.svg);
-    }
-    
-    .pets__pet-amora {
-        background-image: url(../assets/pets/amora.svg);
-    }
-    
-    .pets__pet-zelda {
-        background-image: url(../assets/pets/zelda.svg);
-    }
-    
-    .pets__pet-drescricao {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .pets__pet-drescricao h1 {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: left;
-        color: var(--azul);
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
-        font-family: "Poppins", sans-serif;
-    }
-    
-    .pets__pet-drescricao ul {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: left;
-        margin-bottom: 1.8rem;
-        color: var(--cinza);
-        font-family: "Poppins", sans-serif;
-    }
-    
-    .pets__pet-drescricao p {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0px;
-        text-align: left;
-        margin-bottom: 0.45rem;
-        color: var(--cinza);
-    }
-    
-    .pets__pet-drescricao img {
-        width: 1rem;
-    }
-    .pets__pet-drescricao a {
-        display: flex;
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    
-    span {
-        margin-left: 0.45rem;
-        color: var(--cinza);
     }
 }
