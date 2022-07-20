@@ -4,7 +4,7 @@ body {
     background-color: var(--branco);
     background-image: url(../assets/Forma1.svg), url(../assets/Forma2.svg);
     background-position: top left, center right;
-    background-size: 559.8px 469px, 134px 664px;
+    background-size: 559.8px 469px, 100px 664px;
     background-repeat: no-repeat;
 
     display:flex; 
