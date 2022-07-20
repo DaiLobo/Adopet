@@ -17,6 +17,10 @@
     <body>
         <header>
             <nav class="cabecalho">
+                <picture class="cabecalho__item">
+                    <source media="(min-width: 768px)" srcset="../assets/Logo-creme.svg">
+                    <img src="" style="width:auto;"> 
+                </picture>
                 <a href="./pages/home.html" class="cabecalho__item">
                     <img  src="assets/Casa.png" alt="Home Page">
                 </a>
@@ -30,7 +34,9 @@
             <div>
                 <img src="assets/Logo.svg" alt="Logo da Adopet" class="logo-img">
                 <h3>Boas-vindas!</h3>
-                <p class="paragrafo">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
+                <p id="mobile" class="paragrafo">Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
+                <p id="computer" class="paragrafo">Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje?
+                    Vem com a gente!</p>
                 <div class="botoes">
                     <a href="pages/login.html" class="botoes__btn">
                         Já tenho conta
