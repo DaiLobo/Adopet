@@ -2,9 +2,9 @@
 
 body {
     background-color: var(--branco);
-    background-image: url(../assets/Forma1.svg);
-    background-position: top left;
-    background-size: 559.8px 469px;
+    background-image: url(../assets/Forma1.svg), url(../assets/Forma2.svg);
+    background-position: top left, center right;
+    background-size: 559.8px 469px, 134px 664px;
     background-repeat: no-repeat;
 
     display:flex; 
@@ -13,23 +13,24 @@ body {
 }
 
 main {
-    margin: 6.5rem auto 0 auto;     /* margem esquerda e direita auto */
+    margin: 12.5rem auto 0 auto;     /* margem esquerda e direita auto */
     text-align: center;             /*terminou de centralizar o conteúdo */
     color: var(--azul);
     flex-grow: 1;
 }
 
 .paragrafo {
-    margin: 0 4.12rem;
+    margin: 0 9.12rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
 .formulario {
     background-color: var(--cinza-bg);
-    margin: 1.5rem 1.5rem 2rem 1.5rem;
+    margin: 1.5rem 9.12rem 2rem 9.12rem;
     text-align: left;
     border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
@@ -38,7 +39,6 @@ main {
 
 form {
     margin: 1rem 1rem;
-    text-align: left;
     display: flex;
     flex-direction: column;
 }
@@ -56,15 +56,15 @@ input {
     background-color: var(--branco);
     color: #BCBCBC;
     padding: 0.75rem;
-    margin: 0 auto 0 auto;
+    margin: 0 0 0 0;
     display: inline-block;
-    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
 
     font-family: var(--font-principal);
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
 }
 
 input[type=submit] {
@@ -100,5 +100,17 @@ input[type=submit] {
         display: flex;
         flex-direction: column; 
         min-height: 100vh;
+    }
+
+    main {
+        margin: 4.5rem auto 0 auto;
+    }
+
+    .paragrafo {
+        margin: 0 4.12rem;
+    }
+
+    .formulario {
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
     }
 }
