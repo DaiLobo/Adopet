@@ -37,7 +37,7 @@ h3 {
     margin: 1rem 25.12rem 1.5rem 3.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    transform: translate(56%, 10%);
+    /* transform: translate(56%, 10%); */
 }
 
 .botoes {
@@ -102,7 +102,7 @@ h3 {
     .paragrafo {
         margin: 1rem 4.5rem 1.5rem 3.5rem;
         /* isso está pessimo */
-        transform: translate(0%, 0%)
+        /* transform: translate(0%, 0%) */
     }
     
     .botoes {
