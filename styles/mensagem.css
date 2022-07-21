@@ -89,6 +89,15 @@ input[type=submit] {
     text-align: left;
 }
 
+/*parte desktop*/
+@media(min-width: 1440px){
+
+    main {
+        margin: 10.5rem auto 0 auto;
+    }
+
+}
+
 @media(max-width: 360px) {
     body {
         background-color: var(--branco);

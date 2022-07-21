@@ -119,6 +119,15 @@ input[type=submit] {
     text-align: left;
 }
 
+/*parte desktop*/
+@media(min-width: 1440px){
+
+    main {
+        margin: 6.5rem auto 0 auto;
+    }
+
+}
+
 /*parte mobile*/
 @media(max-width: 360px){
 
