@@ -9,7 +9,7 @@
 }
 
 .cabecalho__item-img {
-    width: 2.5rem;
+    width: 3.5rem;
 }
 
 .cabecalho__item-perfil {
@@ -21,11 +21,24 @@
     margin-left: 20rem ;
 }
 
+/*parte desktop*/
+@media(min-width: 1440px){
+    
+    .cabecalho__item--perfil {
+        margin-left: 82rem ;
+    }
+
+}
+
 @media(max-width: 360px) {
     .cabecalho {
         margin-top: 3rem;
         margin-left: 0;
         display: flex;
+    }
+
+    .cabecalho__item-img {
+        width: 2.5rem;
     }
 
     .cabecalho__item--perfil {

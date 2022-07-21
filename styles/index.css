@@ -35,10 +35,15 @@ h3 {
 }
 
 .paragrafo {
-    margin: 1rem 25.12rem 1.5rem 3.5rem;
+    margin: 1rem center 1.5rem 3.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    transform: translate(56%, 10%);
+}
+
+.paragrafo_texto {     
+    width: 344px;
+    height: 48px; 
+    margin: 2.5rem 0.5rem 4.5rem 1.5rem;
 }
 
 .botoes {
@@ -71,6 +76,14 @@ h3 {
     align-self: center;
 }
 
+.conteudo {
+
+}
+
+.corpo {
+
+}
+
 #mobile {
     display: none;
 }
@@ -83,14 +96,13 @@ h3 {
 @media(min-width: 1440px){
 
     main {
-        margin: 1.5rem auto 0 auto;
+        margin: 6.5rem auto 0 auto;
         text-align: center;    
         font-family: 'IBM Plex Sans', sans-serif;
         color: var(--branco);
         background-image: url(../assets/Ilustracao.svg);
         background-size: 346px 431px;
-        background-position: bottom center;
-        background-position-y: 25.5rem;
+        background-position: bottom -25px center;
         background-repeat: no-repeat;
         flex-grow: 1;
     }
@@ -100,13 +112,26 @@ h3 {
         font-weight: 500;
         margin-top: 40px;
     }
+    
+    .conteudo {
 
-    .paragrafo {
-        margin: 1rem 61.12rem 1.5rem 3.5rem;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        transform: translate(115%, 10%);
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
     }
+
+    .corpo {
+        
+    }
+
+    .paragrafo_texto {     
+        width: 488px;
+        height: 52px;
+        margin: 2.5rem auto 2.5rem auto;
+        
+    }
+
 
 }
 

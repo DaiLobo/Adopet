@@ -28,8 +28,12 @@ body {
 .pets {
     display: flex;
     flex-wrap: wrap;
+
+    margin-top: auto;
     margin-right: 2%;
     margin-left: 4%;
+    
+    justify-content: flex-start;
 }
 
 .pets__pet {
@@ -137,6 +141,48 @@ body {
 span {
     margin-left: 0.45rem;
     color: var(--cinza);
+}
+
+/*parte desktop*/
+@media(min-width: 1440px){
+
+    main {
+        margin: 0 0 0 0;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: var(--azul);
+        
+        display:flex; 
+        flex-direction: column; 
+        min-height: 60vh;
+
+        flex-grow: 1;
+    }
+
+    body {
+        background-color: var(--branco);
+        background-image: url(../assets/Forma1.svg), url(../assets/Forma2.svg);
+        background-position: top left, center right;
+        background-size: 559.8px 469px, 134px 664px;
+    }
+
+    .ola {
+        margin: 5.5rem 4rem 0;
+    }
+
+    .pets {
+        margin-top: 5%;
+        margin-right: 0%;
+        margin-left: 0%;
+         
+        justify-content: center;
+    }
+    
+    .pets__pet {
+        margin-right: 1.5%;
+        width: 28%;
+    }
+
 }
 
 @media(max-width: 360px) {
