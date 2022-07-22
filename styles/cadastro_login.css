@@ -154,6 +154,11 @@ input[type=submit] {
     margin-bottom: 0.5rem;
 }
 
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
 /*parte desktop*/
 @media(min-width: 1440px){
 
