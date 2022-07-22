@@ -96,7 +96,7 @@ h3 {
 @media(min-width: 1440px){
 
     main {
-        margin: 6.5rem auto 0 auto;
+        margin: -0.6rem auto 0 auto;
         text-align: center;    
         font-family: 'IBM Plex Sans', sans-serif;
         color: var(--branco);

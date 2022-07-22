@@ -88,6 +88,7 @@ input {
 }
 
 input[type=submit] {
+    cursor: pointer;
     width: 9.5rem;
     background-color: var(--coral);
     text-align: center;
@@ -101,6 +102,24 @@ input[type=submit] {
     font-weight: 600;
 
     margin: 2rem auto 2rem auto;
+}
+
+input[type=submit]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit]:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
 }
 
 .edit {
