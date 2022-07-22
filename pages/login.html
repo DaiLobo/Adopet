@@ -19,7 +19,7 @@
         <header>
             <nav class="cabecalho">
                 <a href="../index.html" class="cabecalho__item">
-                    <picture>
+                    <picture class="cabecalho__item">
                         <source media="(min-width: 768px)" srcset="../assets/Logo-creme.svg">
                         <img src="" style="width:auto;"> 
                     </picture>
@@ -41,20 +41,24 @@
                         <p class="paragrafo">Já tem conta? Faça seu login:</p>
                     </div>
                     
-                    <form action="#">
+                    <form action="./home.html" id="login">
                         <label for="email">Email</label>
-                        <input type="email" class="caixa email" name="email" placeholder="Insira seu email">
+                        <div class="field">
+                            <input type="email" class="caixa email" id="email" name="email" placeholder="Insira seu email">
+                            <small></small>
+                        </div>
       
                         <label for="senha">Senha</label>
                         <div>
                             <input 
                                 type="password"
                                 id="password"
-                                class="caixa senha"
                                 name="senha"
-                                placeholder="Crie uma senha"
+                                class="caixa senha"
+                                placeholder="Senha"
                             >
                             <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            <small class="field-password"></small>
                         </div>
 
                         <p class="remember">Esqueci minha senha.</p>
@@ -65,25 +69,7 @@
             </div>
         </main>
 
-        <script>
-            const togglePassword = document.querySelector("#togglePassword");
-            const password = document.querySelector("#password");
-    
-            togglePassword.addEventListener("click", function () {
-                // toggle the type attribute
-                const type = password.getAttribute("type") === "password" ? "text" : "password";
-                password.setAttribute("type", type);
-                
-                // toggle the icon
-                this.classList.toggle("bi-eye");
-            });
-    
-            // prevent form submit
-            const form = document.querySelector("form");
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-            });
-        </script>
+        <script src="./scripts/login.js"></script>
 
         <footer class="rodape">
             <p class="rodape__texto">2022 - Desenvolvido por Diana Rose.</p>
