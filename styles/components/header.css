@@ -13,7 +13,7 @@
 }
 
 .cabecalho__item-perfil {
-    width: 2.5rem;
+    width: 3.5rem;
     border-radius: 100px;
 }
 
@@ -26,6 +26,10 @@
     
     .cabecalho__item--perfil {
         margin-left: 82rem ;
+    }
+
+    .cabecalho__item-perfil {
+        width: 4.5rem;
     }
 
 }

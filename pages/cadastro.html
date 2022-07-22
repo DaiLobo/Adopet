@@ -19,10 +19,12 @@
     <body>
         <header>
             <nav class="cabecalho">
-                <picture class="cabecalho__item">
-                    <source media="(min-width: 768px)" srcset="../assets/Logo-creme.svg">
-                    <img src="" style="width:auto;"> 
-                </picture>
+                <a href="../index.html" class="cabecalho__item">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="../assets/Logo-creme.svg">
+                        <img src="" style="width:auto;"> 
+                    </picture>
+                </a>
                 <a href="home.html" class="cabecalho__item">
                     <img  src="../assets/Casa.png" alt="Home Page">
                 </a>
@@ -39,62 +41,51 @@
                     <p class="paragrafo">Ainda não tem cadastro?</p>
                     <p class="paragrafo_texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
     
-                    <form action="#">
+                    <form action="./home.html" id="signup">
                         <label for="email">Email</label>
-                        <input type="email" class="caixa email" name="email" placeholder="Escolha seu melhor email">
-                    
+                        <div class="field">
+                            <input type="email" class="caixa email" id="email" name="email" placeholder="Escolha seu melhor email">
+                            <small></small>
+                        </div>
+
                         <label for="nome">Nome</label>
-                        <input type="nome" class="caixa nome" name="nome" placeholder="Digite seu nome completo">
-                    
+                        <div class="field">
+                            <input type="nome" class="caixa nome" id="nome" name="nome" placeholder="Digite seu nome completo">
+                            <small></small>
+                        </div>
+
                         <label for="senha">Senha</label>
                         <div>
                             <input 
                                 type="password"
                                 id="password"
-                                class="caixa senha"
                                 name="senha"
+                                class="caixa senha"
                                 placeholder="Crie uma senha"
                             >
                             <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            <small class="field-password"></small>
                         </div>
-    
                         <label for="senha-confirme">Confirma sua senha</label>
                         <div>
                             <input 
                                 type="password"
-                                id="password"
+                                id="password-confirm"
                                 class="caixa senha"
                                 name="senha-confirme" 
                                 placeholder="Repita a senha criada acima"
                             >
                             <i class="bi bi-eye-slash" id="togglePassword"></i>
+                            <small class="field-password"></small>
                         </div>
     
-                        <input class="cadastrar" id="submit" type="submit" value="Cadastrar">
+                        <input class="botao" id="submit" type="submit" value="Cadastrar">
                     </form>
                 </div>
             </div>
         </main>
 
-        <script>
-            const togglePassword = document.querySelector("#togglePassword");
-            const password = document.querySelector("#password");
-    
-            togglePassword.addEventListener("click", function () {
-                // toggle the type attribute
-                const type = password.getAttribute("type") === "password" ? "text" : "password";
-                password.setAttribute("type", type);
-                
-                // toggle the icon
-                this.classList.toggle("bi-eye");
-            });
-    
-            // prevent form submit
-            const form = document.querySelector("form");
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-            });
-        </script>
+        <script src="./scripts/cadastro.js"></script>
 
         <footer class="rodape">
             <p class="rodape__texto">2022 - Desenvolvido por Diana Rose.</p>
